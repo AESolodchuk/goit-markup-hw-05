@@ -1,0 +1,135 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f4266;
+  --grey: #2e2f42b2;
+  --white: #ffffff;
+  --modal-backgroud: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+h1 {
+  color: var(--white);
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 3.75em;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  color: var(--navy-blue);
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--navy-blue);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 0.525em;
+  color: var(--iris);
+  letter-spacing: 0.03em;
+}
+
+.header-logo {
+  color: var(--navy-blue);
+}
+
+.footer-logo {
+  color: var(--cloud);
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-email-link:hover,
+.address-email-link:focus {
+  color: var(--ocean);
+  font-weight: 500;
+}
+
+.hero {
+  background-color: var(--navy-blue);
+  text-align: center;
+}
+
+.hero-button {
+  color: var(--white);
+  background-color: var(--iris);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  border: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean);
+}
+
+.team {
+  background-color: var(--cloud);
+}
+
+.portfolio-section-1-button,
+.portfolio-section-1-button {
+  background-color: var(--cloud);
+  color: var(--iris);
+}
+
+.portfolio-section-1-button:hover,
+.portfolio-section-1-button:focus {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+.portfolio-section-1-text {
+  color: var(--slate);
+}
+
+.footer {
+  background-color: var(--navy-blue);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
+
+.hide {
+  display: none;
+}
