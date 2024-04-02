@@ -79,7 +79,9 @@ button {
 .nav-link:hover,
 .nav-link:focus,
 .address-email-link:hover,
-.address-email-link:focus {
+.address-email-link:focus,
+.address-phone-link:hover,
+.address-phone-link:focus {
   color: var(--ocean);
   font-weight: 500;
 }
