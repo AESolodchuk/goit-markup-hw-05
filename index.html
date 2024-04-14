@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--  
-  І на сторінці Портфоліо заголовок h1 має бути всередині секції. А заголовки h3 потрібно
-  замінити на h2, відповідно до ієрархії) -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,13 +60,13 @@
 
     <main>
       <section id="hero" class="hero">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
 
-      <section id="section_1">
+      <section id="section_1" class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="container-features">
@@ -105,11 +102,11 @@
         </div>
       </section>
 
-      <section id="section_2">
+      <section id="section_2" class="what-are-we-doing">
         <div class="container">
           <h2 class="container-what-are-we-doing-header">What are we doing</h2>
-          <ul class="container-what-are-we-doing-list">
-            <li>
+          <ul class="container-what-are-we-doing">
+            <li class="container-what-are-we-doing-list">
               <img
                 src="./images/index/section_2/desktop.jpg"
                 alt="desktop application image"
@@ -117,7 +114,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="container-what-are-we-doing-list">
               <img
                 src="./images/index/section_2/bot.jpg"
                 alt="chat bots image"
@@ -125,7 +122,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="container-what-are-we-doing-list">
               <img
                 src="./images/index/section_2/mobile.jpg"
                 alt="mobile application image"
@@ -138,10 +135,10 @@
       </section>
 
       <section id="section_3" class="our-team">
-        <div class="container container-our-team">
+        <div class="container">
           <h2 class="container-our-team-header">Our Team</h2>
-          <ul class="container-our-team-list">
-            <li class="container-our-team-list-item">
+          <ul class="container-our-team">
+            <li class="container-our-team-list">
               <img
                 src="./images/index/section_3/Mark_Guerreo.jpg"
                 alt="Mark Guerrero profile photo"
@@ -153,7 +150,7 @@
                 <p>Product Designer</p>
               </div>
             </li>
-            <li class="container-our-team-list-item">
+            <li class="container-our-team-list">
               <img
                 src="./images/index/section_3/Tom_Ford.jpg"
                 alt="Tom Ford profile photo"
@@ -165,7 +162,7 @@
                 <p>Frontend Developer</p>
               </div>
             </li>
-            <li class="container-our-team-list-item">
+            <li class="container-our-team-list">
               <img
                 src="./images/index/section_3/Gamila_Garcia.jpg"
                 alt="Camila Garcia profile photo"
@@ -177,7 +174,7 @@
                 <p>Marketing</p>
               </div>
             </li>
-            <li class="container-our-team-list-item">
+            <li class="container-our-team-list">
               <img
                 src="./images/index/section_3/Daniel_Wilson.jpg"
                 alt="Daniel Wilson profile photo"
@@ -196,7 +193,7 @@
 
     <footer class="footer">
       <div class="container container-footer">
-        <a href="./index.html" class="logo"
+        <a href="./index.html" class="logo container-footer-logo"
           >WEB<span class="footer-logo">STUDIO</span></a
         >
         <p class="footer-text">
