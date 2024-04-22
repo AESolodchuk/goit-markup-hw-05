@@ -1,3 +1,5 @@
+/* #ToDo https://www.loom.com/share/b84508a50d2746929cdcf1c76d224b31?sid=b28ce0cb-a129-47f4-bb97-35023d042c44 */
+
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -16,7 +18,7 @@
 
 /* Global styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -132,7 +134,7 @@ button {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -147,9 +149,19 @@ button {
 /* Main styles */
 
 .hero {
-  background-color: var(--navy-blue);
-  padding: 188px 0;
+  max-width: 1440px;
   text-align: center;
+  background-color: var(--navy-blue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/index/section_hero/hero-bg.jpg");
+  padding: 188px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -185,6 +197,15 @@ button {
 
 .container-features-list {
   width: calc((100% - 3 * var(--inner-gap)) / 4);
+}
+
+.container-features-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 100px;
+  background-color: var(--cloud);
+  margin-bottom: 8px;
 }
 
 .container-features-list-headers {
@@ -326,4 +347,29 @@ button {
 .footer-text {
   color: var(--cloud);
   max-width: 264px;
+}
+
+.customers {
+  padding: 120px 120px;
+}
+
+.container-customers-header {
+  margin-bottom: 72px;
+}
+
+.container-customers-list {
+  display: flex;
+  gap: var(--inner-gap);
+  justify-content: center;
+}
+
+.container-customers-list-icons {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 168px;
+}
+
+.container-customers-list-icons-icon {
+  fill: var(--light-slate);
 }
