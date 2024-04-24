@@ -526,6 +526,9 @@ button {
   position: fixed;
   inset: 0;
   background-color: var(--navy-blue-modal);
+  transition-property: opacity, visibility;
+  transition-duration: var(--basic-transition-duration);
+  transition-timing-function: var(--basic-transition-timing-function);
 }
 
 .modal {
