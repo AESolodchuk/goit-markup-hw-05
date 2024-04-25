@@ -565,11 +565,17 @@ button {
   background-color: var(--cornflower);
   border-radius: 50%;
   stroke-width: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.modal-btn:hover {
+  background-color: var(--ocean);
+  color: var(--white);
+  border: none;
 }
 
 .modal-btn-icon {
-  fill: var(--navy-blue);
+  fill: currentColor;
 }
 
 .backdrop.is-hidden {
