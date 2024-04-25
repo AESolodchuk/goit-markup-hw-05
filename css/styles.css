@@ -223,7 +223,7 @@ button {
 }
 
 .features {
-  padding: 120px 120px;
+  padding: 120px 0;
 }
 
 .container-features {
@@ -249,7 +249,7 @@ button {
 }
 
 .what-are-we-doing {
-  padding: 0 0 120px;
+  padding: 0 0 120px 0;
 }
 
 .container-what-are-we-doing-header {
@@ -267,7 +267,7 @@ button {
 
 .our-team {
   background-color: var(--cloud);
-  padding: 120px 120px;
+  padding: 120px 0;
 }
 
 .container-our-team-header {
@@ -297,7 +297,7 @@ button {
 }
 
 .customers {
-  padding: 120px 120px;
+  padding: 120px 0;
 }
 
 .container-customers-header {
@@ -339,7 +339,7 @@ button {
   fill: currentColor;
 }
 
-.portfolio-section-1-text {
+.portfolio-section-text {
   color: var(--slate);
 }
 
@@ -393,7 +393,7 @@ button {
   overflow: hidden;
 }
 
-.portfolio-section-1 {
+.portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -469,7 +469,7 @@ button {
 }
 
 .container-portfolio-list-item-text {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
 }
@@ -486,11 +486,11 @@ button {
 
 .footer {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 
 .container-footer {
   display: flex;
-  padding: 101.5px 0 100px;
 }
 
 .container-footer-text {
