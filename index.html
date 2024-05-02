@@ -464,7 +464,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container container-footer">
         <div class="container-footer-text">
@@ -478,7 +477,7 @@
         </div>
         <div class="container-footer-social">
           <p class="container-footer-social-text">Social media</p>
-          <ul class="global-list-social container-footer-social">
+          <ul class="global-list-social">
             <li class="global-list-social-item">
               <a
                 href="#"
@@ -521,6 +520,32 @@
             </li>
           </ul>
         </div>
+        <div class="container-footer-form">
+          <p class="container-footer-form-text">Subscribe</p>
+          <form class="container-footer-form-subscription">
+            <label class="container-footer-form-subscription-label">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="container-footer-form-subscription-input"
+              />
+            </label>
+            <button
+              type="submit"
+              class="container-footer-form-subscription-button"
+            >
+              Subscribe
+              <svg
+                width="24"
+                height="24"
+                class="container-footer-form-subscription-icon"
+              >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -531,6 +556,88 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-caption">
+          <strong class="modal-text"
+            >Leave your contacts and we will call you back</strong
+          >
+        </p>
+        <form class="modal-form" name="contact_form">
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="contact_name">Name</label>
+            <div class="modal-form-field">
+              <input
+                type="text"
+                class="modal-form-input"
+                name="contact_name"
+                id="contact_name"
+              />
+              <svg class="modal-form-icon" widght="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="contact_phone">Phone</label>
+            <div class="modal-form-field">
+              <input
+                type="tel"
+                class="modal-form-input"
+                name="contact_phone"
+                id="contact_phone"
+              />
+              <svg class="modal-form-icon" widght="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="contact_email">Email</label>
+            <div class="modal-form-field">
+              <input
+                type="email"
+                class="modal-form-input"
+                name="contact_email"
+                id="contact_email"
+              />
+              <svg class="modal-form-icon" widght="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="contact_message"
+              >Comment</label
+            >
+            <textarea
+              class="modal-form-message"
+              name="contact_message"
+              id="contact_message"
+              rows="7"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="moda-form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="contact_agreement"
+              id="contact_agreement"
+            />
+          </div>
+          <label
+            class="modal-form-agreement-description"
+            for="contact_agreement"
+          >
+            <span class="modal-form-agreement-checkbox">
+              <svg class="modal-form-agreement-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
+          </label>
+          <button class="modal-form-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>
