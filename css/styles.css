@@ -674,9 +674,8 @@ button {
   margin-bottom: 8px;
 }
 
-.modal-form-agreement {
-  margin-top: 16px;
-  margin-bottom: 24px;
+.modal-textarea-wrapper {
+  margin-bottom: 16px;
 }
 
 .modal-form-agreement-description {
@@ -710,6 +709,7 @@ button {
 
 .modal-form-input,
 .modal-form-message {
+  display: block;
   width: 100%;
   height: 40px;
   padding: 11px 38px;
@@ -720,7 +720,8 @@ button {
   transition: var(--basic-transition);
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-message:focus {
   border-color: var(--iris);
 }
 
@@ -758,6 +759,10 @@ button {
   position: relative;
 }
 
+.modal-form-agreement {
+  margin-bottom: 24px;
+}
+
 .modal-form-agreement-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -767,14 +772,23 @@ button {
 .modal-form-agreement-icon {
   opacity: 0;
   fill: currentColor;
-  transition-property: opacity;
+  transition-property: opacity, background-color, border-color;
   transition: var(--basic-transition);
 }
 
-input[type="checkbox"]:checked
+.modal-check-input:checked
   + .modal-form-agreement-description
+  > .modal-form-agreement-checkbox {
+  background-color: var(--ocean);
+  border-color: transparent;
+}
+
+.modal-check-input:checked
+  + .modal-form-agreement-description
+  > .modal-form-agreement-checkbox
   > .modal-form-agreement-icon {
   opacity: 1;
+  color: var(--cloud);
 }
 
 .modal-form-button {
