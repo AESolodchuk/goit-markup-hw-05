@@ -697,7 +697,7 @@ button {
   border-radius: 2px;
   transition-property: background-color, border-color;
   transition: var(--basic-transition);
-  color: transparent;
+  fill: transparent;
 }
 
 .modal-form-label {
@@ -774,8 +774,7 @@ button {
 }
 
 .modal-form-agreement-icon {
-  fill: currentColor;
-  transition-property: opacity, background-color, border-color;
+  transition-property: fill, background-color, border-color;
   transition: var(--basic-transition);
 }
 
@@ -784,7 +783,7 @@ button {
   > .modal-form-agreement-checkbox {
   background-color: var(--ocean);
   border-color: transparent;
-  color: var(--cloud);
+  fill: var(--cloud);
 }
 
 .modal-form-button {
