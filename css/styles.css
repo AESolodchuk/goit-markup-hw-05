@@ -571,6 +571,7 @@ button {
 
 .container-footer-form-subscription-input::placeholder {
   color: currentColor;
+  line-height: 1.17;
 }
 
 .container-footer-form-subscription-button {
@@ -696,13 +697,14 @@ button {
   border-radius: 2px;
   transition-property: background-color, border-color;
   transition: var(--basic-transition);
+  color: transparent;
 }
 
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
@@ -732,6 +734,7 @@ button {
   transform: translateY(-50%);
   transition-property: fill;
   transition: var(--basic-transition);
+  color: var(--navy-blue);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -764,13 +767,13 @@ button {
 }
 
 .modal-form-agreement-link {
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
 }
 
 .modal-form-agreement-icon {
-  opacity: 0;
   fill: currentColor;
   transition-property: opacity, background-color, border-color;
   transition: var(--basic-transition);
@@ -781,13 +784,6 @@ button {
   > .modal-form-agreement-checkbox {
   background-color: var(--ocean);
   border-color: transparent;
-}
-
-.modal-check-input:checked
-  + .modal-form-agreement-description
-  > .modal-form-agreement-checkbox
-  > .modal-form-agreement-icon {
-  opacity: 1;
   color: var(--cloud);
 }
 
